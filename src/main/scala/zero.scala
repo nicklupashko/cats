@@ -1,3 +1,3 @@
-object zero {
+object zero extends App {
 
 }
