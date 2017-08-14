@@ -15,12 +15,14 @@ object Exercise3 extends App {
   implicit val booleanAndMonoid: Monoid[Boolean] =
     new Monoid[Boolean] {
       def combine(x: Boolean, y: Boolean): Boolean = x && y
+
       def empty: Boolean = true
     }
 
   implicit val booleanOrMonoid: Monoid[Boolean] =
     new Monoid[Boolean] {
       def combine(x: Boolean, y: Boolean): Boolean = x || y
+
       def empty: Boolean = false
     }
 
